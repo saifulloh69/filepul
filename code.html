@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-info">
+    <h1>Kalkulator</h1>
+    <div class="calculator bg-dark">
+      <input type="text" id="display" readonly />
+      <div class="keypad">
+        <button class="btn-secondary" onclick="Value(7)">7</button>
+        <button class="btn-secondary" onclick="Value(8)">8</button>
+        <button class="btn-secondary" onclick="Value(9)">9</button>
+        <button class="btn-secondary" onclick="Operator('+')">+</button>
+        <button class="btn-secondary" onclick="Value(6)">6</button>
+        <button class="btn-secondary" onclick="Value(5)">5</button>
+        <button class="btn-secondary" onclick="Value(4)">4</button>
+        <button class="btn-secondary" onclick="Operator('-')">-</button>
+        <button class="btn-secondary" onclick="Value(1)">1</button>
+        <button class="btn-secondary" onclick="Value(2)">2</button>
+        <button class="btn-secondary" onclick="Value(3)">3</button>
+        <button class="btn-secondary" onclick="Operator('*')">x</button>
+        <button class="btn-danger" onclick="clearDisplay()">C</button>
+        <button class="btn-secondary" onclick="Value(0)">0</button>
+        <button class="btn-secondary" onclick="Value('.')">.</button>
+        <button class="btn-secondary" onclick="Operator('/')">:</button>
+        <button class="btn-success" onclick="hasil()">=</button>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="style.css"></script>
+  </body>
+</html>
